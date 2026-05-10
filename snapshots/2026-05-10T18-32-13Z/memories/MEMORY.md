@@ -1,0 +1,1 @@
+On this Linux environment, `pip` is not installed in the Hermes venv; `uv tool install -e <path>` worked for installing browser-harness, and `browser-harness` is available on PATH afterward.

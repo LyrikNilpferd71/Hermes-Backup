@@ -1,0 +1,14 @@
+# Local backups and generated artifacts
+snapshots/
+*.tmp
+
+# Never commit secrets from Hermes
+.env
+*.key
+*.pem
+*.p12
+*.pfx
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
