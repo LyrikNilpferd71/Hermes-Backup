@@ -3,8 +3,9 @@ set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SOURCE_DIR="${SOURCE_DIR:-$HOME/.hermes}"
+TS_LOCAL="$(TZ=Europe/Berlin date +%Y-%m-%dT%H-%M-%S%z)"
 TS_UTC="$(date -u +%Y-%m-%dT%H-%M-%SZ)"
-SNAPSHOT_DIR="$REPO_DIR/snapshots/$TS_UTC"
+SNAPSHOT_DIR="$REPO_DIR/snapshots/$TS_LOCAL"
 
 mkdir -p "$SNAPSHOT_DIR"
 
