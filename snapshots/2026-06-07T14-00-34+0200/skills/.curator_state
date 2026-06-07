@@ -1,0 +1,8 @@
+{
+  "last_report_path": "/root/.hermes/logs/curator/20260606-185413",
+  "last_run_at": "2026-06-06T18:54:13.815968+00:00",
+  "last_run_duration_seconds": 22.739904,
+  "last_run_summary": "auto: no changes; llm: I scanned the full candidate list and the only agent-created skill present was `preference-intake`. It is already a class-level umbrella skill: it covers the general preference-intake workflow, distinguishes durable vs temporary information…",
+  "paused": false,
+  "run_count": 4
+}
