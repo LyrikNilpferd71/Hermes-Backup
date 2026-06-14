@@ -1,0 +1,8 @@
+{
+  "last_report_path": "/root/.hermes/logs/curator/20260613-185503",
+  "last_run_at": "2026-06-13T18:55:03.244792+00:00",
+  "last_run_duration_seconds": 91.544743,
+  "last_run_summary": "auto: no changes; llm: I have a complete picture. Let me summarize my findings.\n\n## Analysis Summary\n\n**Candidate list size:** 2 skills, 0 clusters, 0 prefix overlaps.\n\n**Skills reviewed:**\n\n| Skill | Path | Domain | Class-level? | Siblings? | Status |\n|---|---|-…",
+  "paused": false,
+  "run_count": 5
+}
