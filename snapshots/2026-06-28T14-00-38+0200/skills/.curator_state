@@ -1,0 +1,8 @@
+{
+  "last_report_path": "/root/.hermes/logs/curator/20260627-185703",
+  "last_run_at": "2026-06-27T18:57:03.572651+00:00",
+  "last_run_duration_seconds": 25.135396,
+  "last_run_summary": "auto: no changes; llm: I've read both candidate skills in full. Here's my analysis:\n\n## Cluster analysis\n\n**Candidate set: 2 skills**\n\n| Skill | Domain | Class-level? | Narrow artifact? |\n|---|---|---|---|\n| `business-osint` | research/business-intelligence (OSIN…",
+  "paused": false,
+  "run_count": 7
+}
