@@ -1,0 +1,8 @@
+{
+  "last_report_path": "/root/.hermes/logs/curator/20260711-185912",
+  "last_run_at": "2026-07-11T18:59:12.005651+00:00",
+  "last_run_duration_seconds": 36.975953,
+  "last_run_summary": "auto: no changes; llm: I've examined both agent-created skills in full, and verified the broader landscape. Here is the honest result of this consolidation pass.\n\n## Summary\n\n**Candidate count:** 2 agent-created skills (the candidate list is already pre-filtered;…",
+  "paused": false,
+  "run_count": 9
+}
