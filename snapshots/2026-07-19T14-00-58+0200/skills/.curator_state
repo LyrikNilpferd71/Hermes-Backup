@@ -1,0 +1,8 @@
+{
+  "last_report_path": "/root/.hermes/logs/curator/20260718-190024",
+  "last_run_at": "2026-07-18T19:00:24.364581+00:00",
+  "last_run_duration_seconds": 31.4403,
+  "last_run_summary": "auto: no changes; llm: ## Analysis\n\nI read both candidates and inspected their directory contents. The result is that **no consolidation action is warranted**.\n\n**Cluster scan:**\n- `business-osint` (research category, 7 patches, 10 files, ~11KB SKILL.md)\n- `prefe…",
+  "paused": false,
+  "run_count": 10
+}
