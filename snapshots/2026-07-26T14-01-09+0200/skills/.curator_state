@@ -1,0 +1,8 @@
+{
+  "last_report_path": "/root/.hermes/logs/curator/20260725-190137",
+  "last_run_at": "2026-07-25T19:01:37.921603+00:00",
+  "last_run_duration_seconds": 52.453291,
+  "last_run_summary": "auto: no changes; llm: I've examined both agent-created skills and the full skills landscape (88 skills total). Let me document my analysis honestly.\n\n## Summary\n\n**Candidate set:** Only 2 agent-created skills exist, and they share no prefix, no domain, no catego…",
+  "paused": false,
+  "run_count": 11
+}

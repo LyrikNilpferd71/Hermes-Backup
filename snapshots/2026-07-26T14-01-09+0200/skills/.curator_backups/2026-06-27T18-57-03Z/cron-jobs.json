@@ -1,0 +1,53 @@
+{
+  "jobs": [
+    {
+      "id": "5a170846368b",
+      "name": "Hermes weekly backup",
+      "prompt": "You are maintaining a private backup repository for Hermes Agent state at /root/Hermes-Backup, pushing to origin https://github.com/LyrikNilpferd71/Hermes-Backup.git. Create a weekly sanitized backup commit of durable Hermes state and push it. Use the existing /root/Hermes-Backup/backup-self.sh script if present; otherwise create/update it with the following policy: include ~/.hermes/config.yaml, ~/.hermes/memories/MEMORY.md, and ~/.hermes/skills/** while excluding secrets, runtime databases, logs, session data, and ~/.hermes/.env. Commit only if there are changes. After a successful push, report the commit hash and snapshot timestamp. Do not mention or echo any tokens or secrets. The schedule should be interpreted as Berlin local time (Europe/Berlin).",
+      "skills": [
+        "github-repo-management",
+        "github-auth"
+      ],
+      "skill": "github-repo-management",
+      "model": "openai/gpt-5.4-mini",
+      "provider": "openrouter",
+      "base_url": null,
+      "script": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 12 * * 0",
+        "display": "0 12 * * 0"
+      },
+      "schedule_display": "0 12 * * 0",
+      "repeat": {
+        "times": null,
+        "completed": 21
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-05-10T18:32:44.760098+00:00",
+      "next_run_at": "2026-06-28T12:00:00+00:00",
+      "last_run_at": "2026-06-21T12:01:43.033357+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "7666040524",
+        "chat_name": "LyrikNilpferd71",
+        "thread_id": null
+      },
+      "enabled_toolsets": [
+        "terminal",
+        "file",
+        "cronjob"
+      ],
+      "workdir": "/root/Hermes-Backup"
+    }
+  ],
+  "updated_at": "2026-06-21T12:01:43.034247+00:00"
+}
