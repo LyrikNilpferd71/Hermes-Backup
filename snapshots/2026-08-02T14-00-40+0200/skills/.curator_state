@@ -1,0 +1,8 @@
+{
+  "last_report_path": "/root/.hermes/logs/curator/20260801-190257",
+  "last_run_at": "2026-08-01T19:02:57.901520+00:00",
+  "last_run_duration_seconds": 18.200557,
+  "last_run_summary": "auto: no changes; llm: Scanned the complete candidate set (2 agent-created skills) and evaluated prefix/domain clusters.\n\n### Clusters processed\n\n- **Business intelligence / company research**\n  - `business-osint` is already a class-level umbrella skill. It cover…",
+  "paused": false,
+  "run_count": 12
+}
