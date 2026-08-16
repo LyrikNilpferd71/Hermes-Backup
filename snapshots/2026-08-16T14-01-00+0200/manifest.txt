@@ -1,0 +1,3 @@
+backup_utc=2026-08-16T12-01-00Z
+source=/root/.hermes
+hostname=srv956308
