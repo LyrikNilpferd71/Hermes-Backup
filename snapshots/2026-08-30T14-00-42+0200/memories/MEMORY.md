@@ -1,0 +1,3 @@
+On this Linux environment, `pip` is not installed in the Hermes venv; `uv tool install -e <path>` worked for installing browser-harness, and `browser-harness` is available on PATH afterward.
+§
+Twilio call forwarding is set up under /opt/hermes-2/twilio/ with setup.js, set-forward.js, server.js. Twilio SDK installed (npm). .env needs TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, FORWARD_TO_NUMBER filled in before node twilio/setup.js can run.
