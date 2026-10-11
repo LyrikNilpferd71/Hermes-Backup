@@ -1,0 +1,53 @@
+{
+  "name": "Greenmanador AI Support Agent",
+  "agent_id": "PLACEHOLDER_AGENT_ID",
+  "language": "de-DE",
+  "voice_id": "PLACEHOLDER_VOICE_ID",
+  "twilio_number": "PLACEHOLDER_TWILIO_NUMBER",
+  "opening_line": "Hallo, hier ist der AI Support Agent von Greenmanador. Ich bin ein KI-Assistent und dieses Gespräch kann aufgezeichnet werden. Wie kann ich Ihnen helfen?",
+  "opening_line_en": "Hello, this is the AI support agent from Greenmanador. This is an AI assistant and this call may be recorded. How can I help you?",
+  "personalization_webhook_url": "https://dmkkyrvujocuugiycmvk.supabase.co/functions/v1/personalization-webhook",
+  "post_call_webhook_url": "https://dmkkyrvujocuugiycmvk.supabase.co/functions/v1/post-call-webhook",
+  "tools": [
+    {
+      "name": "transfer_to_owner",
+      "description": "Transfer the call to the owner. Only during priority window (Mon-Fri, 11:00-12:00 & 13:30-16:00 Europe/Berlin). Outside: offer callback.",
+      "condition": "priority_window == true",
+      "action": "twilio_dial",
+      "target_number": "PLACEHOLDER_OWNER_NUMBER",
+      "parameters": {
+        "call_sid": "string",
+        "caller_number": "string",
+        "reason": "string"
+      }
+    },
+    {
+      "name": "create_support_ticket",
+      "description": "Create a support ticket with caller info.",
+      "action": "webhook",
+      "webhook_url": "TBD",
+      "parameters": {
+        "name": { "type": "string", "description": "Caller's name" },
+        "contact": { "type": "string", "description": "Caller's contact" },
+        "reason": { "type": "string", "description": "Call reason" },
+        "category": { "type": "string", "enum": ["support", "billing", "general", "other"] },
+        "priority": { "type": "boolean" },
+        "consent_transcript": { "type": "boolean" }
+      }
+    },
+    {
+      "name": "check_ticket_status",
+      "description": "Self-service ticket status lookup.",
+      "action": "webhook",
+      "webhook_url": "TBD",
+      "parameters": {
+        "ticket_id": { "type": "string", "description": "The ticket ID" }
+      }
+    }
+  ],
+  "dynamic_variables": {
+    "priority_window": false,
+    "business_hours_message": "Unser Support ist von Montag bis Freitag zwischen 11:00-12:00 und 13:30-16:00 Uhr erreichbar.",
+    "business_hours_message_en": "Our support is available Monday to Friday between 11:00-12:00 and 13:30-16:00."
+  }
+}
