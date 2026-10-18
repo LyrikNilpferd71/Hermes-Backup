@@ -28,6 +28,13 @@ if [[ -d "$SOURCE_DIR/skills" ]]; then
   rsync -a \
     --exclude '.usage.json' \
     --exclude '.bundled_manifest' \
+    --exclude '.curator_backups/' \
+    --exclude '.curator_state' \
+    --exclude '.env' \
+    --exclude '*.db' \
+    --exclude '*.log' \
+    --exclude '*.sqlite' \
+    --exclude '*.sqlite3' \
     --exclude '*.lock' \
     --exclude '__pycache__/' \
     "$SOURCE_DIR/skills/" "$SNAPSHOT_DIR/skills/"
